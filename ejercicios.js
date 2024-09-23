@@ -1,12 +1,12 @@
-function reemplazarPalabras(){
-    let reemplazarPalabras = prompt("Ingrese una oracion");
+function calcularEdad(){
+    let nombre = prompt("Ingrese su nombre")
+    // let dia = prompt("Ingrese el día de la fecha de nacimiento")
+    // let mes = prompt("Ingrese el mes de la fecha de nacimiento")
+    // let anio = prompt("Ingrese el año de la fecha de nacimiento")
 
-    let palabraClave = prompt("Ingrese una palabra");
-    let palabraIngresar = prompt("Ingrese una palabra para reemplazar a la anterior");
+    let edad = 
 
-    let nuevaOracion = reemplazarPalabras.replaceAll(palabraClave, palabraIngresar);
-
-    document.getElementById('ejercicio1').innerHTML = `Primera oracion: ${reemplazarPalabras}, Palabra a cambiar: ${palabraClave}, Palabra elegida: ${palabraIngresar}, Oracion Final: ${nuevaOracion}`;
+    document.getElementById('ejercicio1').innerHTML = `Hola ${nombre}! Tienes ${edad} años`
 }
 
 function compararDatos(){
@@ -40,4 +40,15 @@ function compararDatos(){
 
     document.getElementById('ejercicio2').innerHTML = `A: ${numeroCompararAString}; B: ${numeroMismoTipoValor}; C: ${tipoValor}; D: ${probarBool}`;
 }
+
+function reemplazarPalabras(){
+    let reemplazarPalabras = prompt("Ingrese una oracion");
+    let palabraClave = prompt("Ingrese una palabra");
+    let palabraIngresar = prompt("Ingrese una palabra para reemplazar a la anterior");
+
+    let nuevaOracion = reemplazarPalabras.replaceAll(palabraClave, palabraIngresar);
+
+    document.getElementById('ejercicio1').innerHTML = `Primera oracion: ${reemplazarPalabras}, Palabra a cambiar: ${palabraClave}, Palabra elegida: ${palabraIngresar}, Oracion Final: ${nuevaOracion}`;
+}
+
 
