@@ -13,6 +13,8 @@ function calcularEdad() {
   ).innerHTML = `Hola ${nombre}! Tienes ${edad} años`;
 }
 
+calcularEdad();
+
 function tirandoFruta() {
   const frutas = [
     "pera",
@@ -58,6 +60,8 @@ function tirandoFruta() {
   }
 }
 
+tirandoFruta();
+
 function YoObjeto() {
   const Ciudad = {
     Nombre: "Buenos Aires",
@@ -70,6 +74,8 @@ function YoObjeto() {
     console.log(`${propiedad}: ${Ciudad[propiedad]}`);
   }
 }
+
+YoObjeto();
 
 function TrianguloAsterisco() {
   let string = "";
@@ -88,6 +94,8 @@ function TrianguloAsterisco() {
   document.getElementById("ejercicio4").innerHTML = string;
 }
 
+TrianguloAsterisco();
+
 function NombresConA() {
   let nombres = prompt("Ingrese nombres separados por coma");
   let listNombres = nombres.split(", ");
@@ -95,6 +103,8 @@ function NombresConA() {
 
   document.getElementById("ejercicio5").innerHTML = `Nombres con A: ${nombresConA}`;
 }
+
+NombresConA();
 
 function CortarTexto(){
     let cadenaTexto = prompt("Ingrese una cadena de texto");
@@ -105,12 +115,16 @@ function CortarTexto(){
     document.getElementById("ejercicio6").innerHTML = `La letra segun el numero proporcionado: ${cadenaNueva}`;
 }
 
+CortarTexto();
+
 function StringConSeparador(){
     let elementos = prompt("Ingrese nombres separados por -");
     let listaElementos = elementos.split(" - ");
 
     document.getElementById("ejercicio7").innerHTML = `${listaElementos}`;
 }
+
+StringConSeparador();
 
 function CalculadoraRecaduacion(){
     let pedidos = prompt("Ingresa los pedidos en el formato 'nombre:total', separados por coma:");
@@ -126,7 +140,7 @@ function CalculadoraRecaduacion(){
         total += pedido.total;
     })
 
-    document.getElementById("ejercicio7").innerHTML = `${total}`;
+    document.getElementById("ejercicio8").innerHTML = `${total}`;
 }
 
 CalculadoraRecaduacion();
@@ -143,9 +157,11 @@ function compararDatos() {
   probarBool = true == 1;
 
   document.getElementById(
-    "ejercicio8"
+    "ejercicio9"
   ).innerHTML = `A: ${numeroCompararAString}; B: ${numeroMismoTipoValor}; C: ${tipoValor}; D: ${probarBool}`;
 }
+
+compararDatos();
 
 function reemplazarPalabras() {
   let reemplazarPalabras = prompt("Ingrese una oracion");
@@ -163,3 +179,5 @@ function reemplazarPalabras() {
     "ejercicio10"
   ).innerHTML = `Primera oracion: ${reemplazarPalabras}, Palabra a cambiar: ${palabraClave}, Palabra elegida: ${palabraIngresar}, Oracion Final: ${nuevaOracion}`;
 }
+
+reemplazarPalabras();
